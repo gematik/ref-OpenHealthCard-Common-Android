@@ -1,0 +1,8 @@
+ifndef::javadoc[]
+include::config.adoc[]
+
+== Introduction
+
+endif::javadoc[]
+
+This part describes the functionality and usability of android common library 

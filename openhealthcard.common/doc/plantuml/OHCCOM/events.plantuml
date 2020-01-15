@@ -1,0 +1,84 @@
+@startuml
+
+
+
+  package de.gematik.ti.openhealthcard.common {
+    package de.gematik.ti.openhealthcard.common.events {
+      abstract class AbstractOpenHealthCardEvent {
+          - sourceClass : String
+          - message : String
+          + AbstractOpenHealthCardEvent()
+          + AbstractOpenHealthCardEvent()
+          + getMessage()
+          + getSourceClass()
+          + toString()
+      }
+    }
+  }
+  
+
+  package de.gematik.ti.openhealthcard.common {
+    package de.gematik.ti.openhealthcard.common.events {
+      class CommonEventTransmitter {
+          - CommonEventTransmitter()
+          {static} + postError()
+          {static} + postError()
+          {static} + postInfo()
+          {static} + postWarn()
+      }
+    }
+  }
+  
+
+  package de.gematik.ti.openhealthcard.common {
+    package de.gematik.ti.openhealthcard.common.events {
+      class ErrorEvent {
+          - throwable : Throwable
+          + ErrorEvent()
+          + ErrorEvent()
+          + ErrorEvent()
+          + ErrorEvent()
+          + ErrorEvent()
+          + ErrorEvent()
+          + getThrowable()
+          + toString()
+      }
+    }
+  }
+  
+
+  package de.gematik.ti.openhealthcard.common {
+    package de.gematik.ti.openhealthcard.common.events {
+      class InfoEvent {
+          + InfoEvent()
+          + InfoEvent()
+          + toString()
+      }
+    }
+  }
+  
+
+  package de.gematik.ti.openhealthcard.common {
+    package de.gematik.ti.openhealthcard.common.events {
+      class WarnEvent {
+          + WarnEvent()
+          + WarnEvent()
+          + toString()
+      }
+    }
+  }
+  
+
+  ErrorEvent -up-|> AbstractOpenHealthCardEvent
+  InfoEvent -up-|> AbstractOpenHealthCardEvent
+  WarnEvent -up-|> AbstractOpenHealthCardEvent
+
+
+
+
+
+
+
+
+
+@enduml

@@ -1,0 +1,23 @@
+@startuml
+
+
+
+  namespace de.gematik.ti.openhealthcard.common {
+    namespace interfaces {
+      interface de.gematik.ti.openhealthcard.common.interfaces.IAndroidCardReaderController {
+          {abstract} + setContext()
+      }
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+@enduml

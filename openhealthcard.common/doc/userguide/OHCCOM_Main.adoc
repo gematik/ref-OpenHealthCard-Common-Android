@@ -1,0 +1,5 @@
+include::config.adoc[]
+= OpenHealthCard-Common Android Library
+include::OHCCOM_Introduction.adoc[]
+include::OHCCOM_Overview.adoc[]
+include::OHCCOM_GettingStarted.adoc[]

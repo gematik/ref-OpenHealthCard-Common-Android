@@ -1,0 +1,67 @@
+include::config.adoc[]
+
+== Overview
+This Library contains Controller to inject Android Context to CardReader Provider. For that
+extends this Library the cardreader.provider.api functionality for Android. Furthermore
+Controller to request Permissions from Provider to handle e.g. card reader.
+
+ifndef::useCachePlantuml[]
+
+.OpenHealthCard Common Android library overview
+[plantuml, OHCCOM/generated/common, png, caption="{classdia-caption} {counter:class}: ", 650]
+----
+include::{plantumldir}/OHCCOM/common.plantuml[]
+----
+
+endif::useCachePlantuml[]
+ifdef::useCachePlantuml[]
+
+.OpenHealthCard Common Android library overview
+image::OHCCOM/generated/common.png[caption="{classdia-caption} {counter:class}: "]
+
+{empty} +
+
+endif::useCachePlantuml[]
+
+=== AndroidCardReaderController
+// tag::AbstractAndroidCardReaderController[]
+This class is an android specific extension of <<crpapi_cardreadercontroller, AbstractCardReaderController>> from package de.gematik.ti.cardreader.provider.api.
+The additional functionalities are android context handling and permissions requests, necessary for android card reader provider.
+
+ifndef::useCachePlantuml[]
+
+.OpenHealthCard Common Android library overview
+[plantuml, OHCCOM/generated/interfaces, png, caption="{classdia-caption} {counter:class}: ", 650]
+----
+include::{plantumldir}/OHCCOM/interfaces.plantuml[]
+----
+
+endif::useCachePlantuml[]
+ifdef::useCachePlantuml[]
+
+.OpenHealthCard Common Android library overview
+image::OHCCOM/generated/interfaces.png[caption="{classdia-caption} {counter:class}: "]
+
+{empty} +
+
+endif::useCachePlantuml[]
+
+ifndef::useCachePlantuml[]
+
+.OpenHealthCard AbstractCardReaderController
+[plantuml, OHCCOM/generated/common, png, caption="{classdia-caption} {counter:class}: ", 650]
+----
+include::{plantumldir}/OHCCOM/common.plantuml[]
+----
+
+endif::useCachePlantuml[]
+ifdef::useCachePlantuml[]
+
+.OpenHealthCard AbstractCardReaderController
+image::OHCCOM/generated/common.png[caption="{classdia-caption} {counter:class}: "]
+
+{empty} +
+
+endif::useCachePlantuml[]
+
+// end::AbstractAndroidCardReaderController[]
